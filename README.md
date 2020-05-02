@@ -19,4 +19,4 @@ This analysis was motivated by my interest in understanding the Business Ecosyst
 
 ### Example Map from the Analysis
 
-<img src="Images/map.png" height="1000" width="1000">
+<img src="Images/map.png" height="800" width="800">
