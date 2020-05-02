@@ -16,3 +16,7 @@ This analysis was motivated by my interest in understanding the Business Ecosyst
 - Textual data for business types was preprocessed using Python `Spacy` and `NLTK` packages.
 - Topic Modeling was applied to find the main 15 Business types using `Gensim ` Package.
 - All data visualization was done in `Altair`.
+
+### Example Map from the Analysis
+
+<img src="Images/map" height="1000" width="1000">
