@@ -12,7 +12,7 @@ This analysis was motivated by my interest in understanding the Business Ecosyst
 
 ### Methods and packages used
 
-- Data preprocessing was done using Python Pandas package.
+- Data preprocessing was done using Python `Pandas` package.
 - Textual data for business types was preprocessed using Python `Spacy` and `NLTK` packages.
-- Topic Modeling was applied to find the main 15 Business types using Gensim Package.
-- All data visualization was done in Altair.
+- Topic Modeling was applied to find the main 15 Business types using `Gensim ` Package.
+- All data visualization was done in `Altair`.
