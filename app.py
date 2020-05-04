@@ -7,7 +7,6 @@ import pandas as pd
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 import requests
-import ast
 
 
 app = dash.Dash(__name__, assets_folder='assets', external_stylesheets=[dbc.themes.CERULEAN])
@@ -79,7 +78,7 @@ alt.themes.register('mds_special', mds_special)
 alt.themes.enable('mds_special')
 
 # plotting the ratio bar chart
-def map(business_to_choose = "Beauty Salon", year_to_choose = 2018):
+def map(business_to_choose = "Beauty Salon"):
     """
     Given the business type and year, filter the dataset and plot a map for the counts of the buisness per neighbourhood
 
@@ -94,7 +93,7 @@ def map(business_to_choose = "Beauty Salon", year_to_choose = 2018):
     an altair map.
     """
     dataset = pd.read_csv("Data/dataset.csv").dropna(subset=['Geom', 'LocalArea'])[["FOLDERYEAR", "LicenceRSN", "LocalArea", "Business_type_pp", "X", "Y"]]
-    dataset_subset = dataset.query("Business_type_pp == @business_to_choose and FOLDERYEAR == @year_to_choose")
+    dataset_subset = dataset.query("Business_type_pp == @business_to_choose")
     url = "https://maps.vancouver.ca/server/rest/services/Hosted/NeighbourhoodBoundaries/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson"
     # Vancouver Map Json file
     r = requests.get(url)
