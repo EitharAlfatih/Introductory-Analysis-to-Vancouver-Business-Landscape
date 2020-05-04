@@ -92,7 +92,7 @@ def map(business_to_choose = "Beauty Salon"):
     ---------------------
     an altair map.
     """
-    dataset = pd.read_csv("Data/dataset.csv").dropna(subset=['Geom', 'LocalArea'])[["FOLDERYEAR", "LicenceRSN", "LocalArea", "Business_type_pp", "X", "Y"]]
+    dataset = pd.read_csv("Data/dataset.csv").dropna()[["FOLDERYEAR", "LicenceRSN", "LocalArea", "Business_type_pp", "X", "Y"]]
     dataset_subset = dataset.query("Business_type_pp == @business_to_choose")
     url = "https://maps.vancouver.ca/server/rest/services/Hosted/NeighbourhoodBoundaries/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson"
     # Vancouver Map Json file
