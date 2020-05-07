@@ -1,6 +1,6 @@
 # Forecasting-the-Evolution-of-Vancouver-s-Business-Landscape
 
-Analysis is found [here](https://github.com/EitharAlfatih/Introduction-to-Vancouver-s-Business-Landscape)
+Analysis can be found [here](https://github.com/EitharAlfatih/Introduction-to-Vancouver-s-Business-Landscape)
 
 ### About the Analysis
 This analysis was motivated by my interest in understanding the Business Ecosystem in Vancouver. The main objective is classify the buisnesses into 15 main catogories and then see how the number of new registered businesses have changed over time.
