@@ -1,4 +1,4 @@
-# Forecasting-the-Evolution-of-Vancouver-s-Business-Landscape
+# Introductory Analysis to Vancouver’s Business Landscape 
 
 Analysis can be found [here](https://github.com/EitharAlfatih/Introduction-to-Vancouver-s-Business-Landscape)
 
